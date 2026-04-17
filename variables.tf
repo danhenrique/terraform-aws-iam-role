@@ -1,11 +1,13 @@
 variable "role_name" {
-  description = "Nome da Role"
+  description = "Nome da Role (opcional - deixe nulo para criar apenas policies)"
   type        = string
+  default     = null
 }
 
 variable "assume_role_policy_document" {
-  description = "Documento JSON da política de confiança da Role"
+  description = "Documento JSON da política de confiança da Role (obrigatório se role_name for fornecido)"
   type        = string
+  default     = null
 }
 
 variable "policies" {
@@ -15,6 +17,7 @@ variable "policies" {
     description = string
     document    = string
   }))
+  default = []
 }
 
 variable "tags" {
