@@ -12,7 +12,7 @@ variable "assume_role_policy_document" {
 
 variable "policies" {
   description = "Lista de definições de política"
-  type        = list(object({
+  type = list(object({
     name        = string
     description = string
     document    = string
