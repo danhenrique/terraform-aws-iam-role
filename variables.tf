@@ -25,13 +25,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
   validation {
-<<<<<<< Updated upstream
-    condition = contains(keys(var.tags), "git_repository")
-    error_message = "The 'git_repository' tag is mandatory."
-=======
     condition     = contains(keys(var.tags), "Repository")
     error_message = "The 'Repository' tag is mandatory."
->>>>>>> Stashed changes
   }
 }
 
