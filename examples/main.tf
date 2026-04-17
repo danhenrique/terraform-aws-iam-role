@@ -13,7 +13,7 @@ module "iam_role_with_policies" {
   ]
 
   tags = {
-    creator        = "danhenrique"
+    creator    = "danhenrique"
     Repository = "https://github.com/DanHenrique/terraform-aws-iam-role"
   }
 }
