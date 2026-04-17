@@ -12,7 +12,7 @@
 
 ### Added
 
-- Mandatory tags: `git_repository`.
+- Mandatory tags: `Repository`.
 
 ### Changed
 

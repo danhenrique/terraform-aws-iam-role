@@ -25,7 +25,7 @@ variable "tags" {
   type        = map(string)
   default     = {}
   validation {
-    condition     = contains(keys(var.tags), "Repository")
+    condition = contains(keys(var.tags), "Repository")
     error_message = "The 'Repository' tag is mandatory."
   }
 }
