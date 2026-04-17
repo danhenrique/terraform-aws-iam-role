@@ -13,12 +13,7 @@ module "iam_role_with_policies" {
   ]
 
   tags = {
-<<<<<<< Updated upstream
-    creator        = "danhenrique"
-    git_repository = "https://github.com/DanHenrique/terraform-aws-iam-role"
-=======
     creator    = "danhenrique"
     Repository = "https://github.com/DanHenrique/terraform-aws-iam-role"
->>>>>>> Stashed changes
   }
 }
