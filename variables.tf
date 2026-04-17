@@ -12,7 +12,7 @@ variable "assume_role_policy_document" {
 
 variable "policies" {
   description = "Lista de definições de política"
-  type        = list(object({
+  type = list(object({
     name        = string
     description = string
     document    = string
@@ -25,8 +25,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
   validation {
-    condition = contains(keys(var.tags), "git_repository")
-    error_message = "The 'git_repository' tag is mandatory."
+    condition = contains(keys(var.tags), "Repository")
+    error_message = "The 'Repository' tag is mandatory."
   }
 }
 
